@@ -1,2 +1,5 @@
-Đây là bài học về thử viết giao diện trang web bằng html, css.
-Có làm reponsive.
+Đây là bài học về thử viết mã cho trang web, có sử dụng reponsive.
+- Các bước để viết mã: 
+	+ Phân tích.
+	+ Đặt tên.
+	+ Viết mã.

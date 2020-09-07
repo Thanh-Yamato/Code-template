@@ -15,10 +15,11 @@ body {
 	overflow: hidden;
 	display: grid;
 	grid-template-columns: 1fr 5fr;
-	position: sticky;
+	position: fixed;
+	width: 100%;
 	top: 0;
-	z-index: 999;
 	padding: 10px;
+	z-index: 1000;
 }
 
 .logo {
@@ -263,3 +264,24 @@ a.link:hover {
 	}
 }
 /* Lam about-us layout. Ket thuc. */
+
+
+
+/* Lam components services. Bat dau. */
+.service-item {
+	text-align: center;
+	padding: 20px 0;
+}
+
+.services-icon {
+	font-size: 50px;
+	color: #1cb4b9;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.service-item h3 {
+    font-weight: bold;
+    letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+/* Lam components services. Ket thuc. */

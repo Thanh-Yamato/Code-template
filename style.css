@@ -2,9 +2,9 @@ body {
 	font-family: Roboto, sans-serif;
 }
 
+
+
 /* Bat dau. Bieu do tuan */
-
-
 .weekly-item {
 	background: #bbb;
 	border-radius: 5px;
@@ -63,13 +63,11 @@ body {
 .weekly-item:hover {
 	background: #eee;
 }
-
-
-
 /* Ket thuc. Bieu do tuan. */
 
-/* Bat dau. Moi phat hanh.*/
 
+
+/* Bat dau. Moi phat hanh.*/
 .new-song-item {
 	background: #eee;
 	padding: 20px;
@@ -149,7 +147,6 @@ body {
 .new-song-item .song-img:hover .overlay {
 	opacity: 1;
 }
-
 /* Ket thuc. Moi phat hanh. */
 
 

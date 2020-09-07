@@ -1,0 +1,101 @@
+body {
+	font-family: Roboto, sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* Topnav. Bat dau */
+.topnav {
+	background-color: #333;
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	padding: 10px;
+}
+
+.logo {
+	margin: 0 auto;
+}
+
+.navigation {
+	margin: 0 auto;
+}
+
+.navigation a {
+	display: block;
+	float: left;
+	padding: 10px 10px;
+	color: #f2f2f2;
+	text-decoration: none;
+	font-size: 14px;
+	text-align: center;
+}
+
+.navigation a:hover {
+	color: #1bb4b9;
+}
+
+.navigation a:focus {
+	color: #1bb4b9;
+}
+
+.navigation .icon {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+	.logo {
+		margin: 0;
+	}
+
+	.navigation {
+		margin: 0;
+	}
+
+	.navigation a {
+		display: none;
+	}
+
+	.navigation a.icon {
+		float: right;
+		display: block;
+	}
+}
+@media screen and (max-width: 768px) {
+
+	.topnav {
+		position: sticky;
+		grid-template-columns: 1fr;
+	}
+	.navigation a.icon {
+		position: absolute;
+		top: 3px;
+		right: 20px;
+		font-size: 30px;
+	}
+
+	.navigation.reponsive {
+		margin-top: 20px;
+		border-top: 1px solid #ddd;
+		height: 100%;
+	}
+
+	.navigation.reponsive a:not(.icon) {
+		clear: both;
+		display: block;
+		text-align: left;
+		margin: 0 10px;
+	    width: -webkit-fill-available;
+	}
+
+}
+/* Topnav. Ket thuc */
+

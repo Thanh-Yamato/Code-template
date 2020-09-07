@@ -3,6 +3,7 @@ body {
 }
 
 * {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
@@ -212,3 +213,53 @@ a.link:hover {
 	}
 }
 /* Lam Header. Ket thuc. */
+
+
+
+/* Lam about-us layout. Bat dau. */
+.about-us {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.about-img {
+	background-image: url(/img/about-img.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	min-height: 550px;
+}
+
+.about-content {
+	background-color: #1bb4b9;
+	padding: 50px;
+	color: #fff;
+}
+
+.about-content h1 {
+	font-weight: normal;
+	font-size: 30px;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+}
+
+.about-content p {
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+
+@media screen and (min-width: 992px) {
+	.about-us {
+		flex-direction: row;
+	}
+
+	.about-img {
+		width: 50%;
+	}
+
+	.about-content {
+		width: 50%;
+	}
+}
+/* Lam about-us layout. Ket thuc. */

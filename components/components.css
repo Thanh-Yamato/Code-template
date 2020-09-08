@@ -412,3 +412,46 @@ a.link:hover {
 	}
 }
 /* Lam component portfolio. Ket thuc. */
+
+
+
+/* Lam component blog. Bat dau. */
+.blog-item {
+	width: 100%;
+	position: relative;
+	text-align: center;
+	display: block;
+}
+
+.blog-item .hover-img {
+	background-color: #333;
+	width: 100%;
+	height: auto;
+	/*display: block;*/
+	overflow: hidden;
+}
+
+.blog-item .image {
+	width: 100%;
+	transition: all 0.5s ease-in-out;
+}
+
+.hover-img:hover .image {
+	transform: scale(1.1);
+	opacity: 0.6;
+}
+
+.blog-item .blog-link {
+	color: #1bb4b9;
+}
+
+.caption > * {
+	margin-top: 5px;
+}
+
+@media screen and (min-width: 992px) {
+	.blog-item {
+		width: 50%;
+	}
+}
+/* Lam component blog. Ket thuc. */

@@ -2,169 +2,218 @@ body {
 	font-family: Roboto, sans-serif;
 }
 
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 
 
-/* Bat dau. Bieu do tuan */
-.weekly-item {
-	background: #bbb;
-	border-radius: 5px;
-	display: flex;
-	align-items: center;
+/* Topnav. Bat dau. */
+.topnav {
+	background-color: #333;
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: 1fr;
+	position: sticky;
+	width: 100%;
+	top: 0;
 	padding: 10px;
-	margin: 10px 0;
-	color: #fff;
+	z-index: 1000;
 }
 
-.weekly-item > .rank {
-	font-size: 25px;
-	margin-right: 10px;
+.logo {
+	margin: 0;
 }
 
+.navigation {
+	margin: 0;
+}
 
-.weekly-item > .song-img {
-	margin-right: 10px;
+.navigation a {
+	display: none;
+	padding: 10px 10px;
+	color: #f2f2f2;
+	text-decoration: none;
+	font-size: 14px;
 	text-align: center;
-	border-radius: 5px;
 }
 
-.weekly-item > .info-song {
-	flex-grow: 1;
-
+.navigation a:hover {
+	color: #1bb4b9;
 }
 
-.weekly-item .song-name {
-	font-weight: bold;
-	font-size: 15px;
+.navigation a:focus {
+	color: #1bb4b9;
 }
 
-.weekly-item .singer:link, .weekly-item .singer:visited {
-	font-size: 12px;
-	color: #ddd;
-	text-decoration: none;
+.navigation a.icon {
+	display: block;
+	position: absolute;
+	top: 3px;
+	right: 20px;
+	font-size: 30px;
 }
 
-.weekly-item .singer:hover {
-	font-size: 12px;
-	color: #6e55b4;
-}
-
-.weekly-item .first {
-	color: #4a90e2;
-}
-
-.weekly-item .second {
-	color: #50e3c2;
-}
-
-.weekly-item .third {
-	color: #4a90e2;
-}
-
-.weekly-item:hover {
-	background: #eee;
-}
-/* Ket thuc. Bieu do tuan. */
-
-
-
-/* Bat dau. Moi phat hanh.*/
-.new-song-item {
-	background: #eee;
-	padding: 20px;
-	border-radius: 5px;
-	display: flex;
-	width: 50%;
-}
-
-.new-song-item .song-img {
-	width: 100px;
-	height: 100px;
-	background-image: url('https://via.placeholder.com/100x200');
-	background-size: cover;
-	background-position: center;
-	border-radius: 5px;
-	margin-right: 10px;
-}
-
-.new-song-item .info {
-	flex-grow: 1;
-	align-items: flex-end;
-}
-
-.new-song-item .song-name {
-	font-weight: bold;
-}
-
-.new-song-item .singer {
-	font-size: 12px;
-	text-decoration: none;
-	color: #aaa;
-}
-.new-song-item .singer:hover {
-	color: #6e55b4;
-} 
-
-.new-song-item .rank {
-	font-size: 50px;
-	font-weight: bold;
-	-webkit-text-stroke: 2px #6e55b4;
-    -webkit-text-fill-color: white;
-    color: transparent;
-}
-
-.new-song-item .date-release {
-	font-size: 12px;
-	color: #aaa;
-}
-
-.new-song-item .align {
-	display: flex;
-	justify-content: flex-end;
-}
-
-.new-song-item .rank {
-	display: flex;
-	align-items: flex-end;
-}
-
-.new-song-item .date-release {
-	flex-grow: 1;
-	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;
-}
-
-.new-song-item .overlay {
-	background-color: rgba(0, 0, 0, 0.5);
+.navigation.reponsive {
+	margin-top: 20px;
+	border-top: 1px solid #ddd;
 	height: 100%;
-	display: flex;
-	font-size: 50px;
-	justify-content: center;
-	align-items: center;
-	opacity: 0;
 }
 
-.new-song-item .song-img:hover .overlay {
-	opacity: 1;
+.navigation.reponsive a:not(.icon) {
+	clear: both;
+	display: block;
+	text-align: left;
+	margin: 0 10px;
+    width: -webkit-fill-available;
 }
-/* Ket thuc. Moi phat hanh. */
+/* Topnav. Ket thuc. */
 
 
 
+/* Lam Header. Bat dau. */
+header {
+	width: 100%;
+	height: 100vh;
+	background-image: url('/img/banner.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	z-index: 1;
+}
+
+header::before {
+	content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.banner-content {
+	z-index: 3;
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.container {
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.banner-content .heading-title {
+	overflow: hidden;
+	width: 100%;
+	font-size: 35px;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+.content {
+	display: none;
+}
+
+a {
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+}
+
+a.link {
+	padding: 10px 20px;
+	border: 2px solid #fff;
+	letter-spacing: 1px;
+}
+
+a.link:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+.bottom-row {
+	font-size: 30px;
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	bottom: 15%;
+	transform: translate(-50%, 0);
+	animation: exter-bounce 1s ease 0s infinite;
+	z-index: 999;
+	cursor: pointer;
+}
+
+@keyframes exter-bounce {
+	100% {bottom: 10%;}
+}
+/* Lam Header. Ket thuc. */
 
 
 
+/* Media queries. */
+@media screen and (min-width: 768px) {
 
+	/* Topnav. Bat dau. */
+	.logo {
+		margin: 0 auto;
+	}
 
+	.navigation {
+		margin: 0 auto;
+	}
 
+	.navigation a {
+		display: block;
+		float: left;
+	}
 
+	.navigation a.icon {
+		display: none;
+	}
 
+	.topnav {
+		grid-template-columns: 1fr 5fr;
+	}
+	/* Topnav. Ket thuc. */
 
+	/* Lam header. Bat dau. */
+	.container {
+		width: 720px;
+	}
 
+	.content {
+		display: block;
+		font-size: 1rem;
+		padding: 0 60px 30px;
+		margin: 0 0 10px 0;
+		line-height: 1.6;
+	}
+	/* Lam header. Ket thuc. */
+}
 
+@media screen and (min-width: 992px) {
+	/* Lam header. Bat dau. */
+	.container {
+		width: 960px;
+	}
+	/* Lam header. Ket thuc. */
+}
 
-
-
-
-
-
+@media and screen (min-width: 1200px) {
+	/* Lam header. Bat dau. */
+	.container {
+		width: 1140px;
+	}
+	/* Lam header. Ket thuc. */
+}
+/* Media queries. */

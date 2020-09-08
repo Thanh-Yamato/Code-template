@@ -15,7 +15,7 @@ body {
 	overflow: hidden;
 	display: grid;
 	grid-template-columns: 1fr;
-	position: sticky;
+	position: fixed;
 	width: 100%;
 	top: 0;
 	padding: 10px;
@@ -160,6 +160,42 @@ a.link:hover {
 
 
 
+/* Lam about-us layout. Bat dau. */
+.about-us {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.about-img {
+	background-image: url(/img/about-img.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	min-height: 550px;
+}
+
+.about-content {
+	background-color: #1bb4b9;
+	padding: 50px;
+	color: #fff;
+}
+
+.about-content h1 {
+	font-weight: normal;
+	font-size: 30px;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+}
+
+.about-content p {
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+/* Lam about-us layout. Ket thuc. */
+
+
+
 /* Media queries. */
 @media screen and (min-width: 768px) {
 
@@ -199,21 +235,40 @@ a.link:hover {
 		line-height: 1.6;
 	}
 	/* Lam header. Ket thuc. */
+
 }
 
 @media screen and (min-width: 992px) {
+
 	/* Lam header. Bat dau. */
 	.container {
 		width: 960px;
 	}
 	/* Lam header. Ket thuc. */
+
+	/* Lam about-us layout. Bat dau. */
+	.about-us {
+		flex-direction: row;
+	}
+
+	.about-img {
+		width: 50%;
+	}
+
+	.about-content {
+		width: 50%;
+	}
+	/* Lam about-us layout. Ket thuc. */
+
 }
 
 @media and screen (min-width: 1200px) {
+
 	/* Lam header. Bat dau. */
 	.container {
 		width: 1140px;
 	}
 	/* Lam header. Ket thuc. */
+
 }
 /* Media queries. */

@@ -331,8 +331,6 @@ a.link:hover {
     transition: all 0.5s ease-in-out;
 }
 
-/*.team-member .member-info::after*/
-
 .member-info:hover::after, .member-info:hover .info {
 	opacity: 1;
 }
@@ -368,3 +366,49 @@ a.link:hover {
 }
 /*  Lam component team member. Ket thuc. */
 
+/* Lam component portfolio. Bat dau. */
+.portfolio-item {
+	width: 100%;
+	position: relative;
+	float: left;
+}
+
+.portfolio-item .image {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.portfolio-item .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	font-size: 30px;
+	color: #fff;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+
+.portfolio-item:hover .overlay {
+	opacity: 1;
+	cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+	.portfolio-item {
+		width: 50%;
+	}
+}	
+
+@media screen and (min-width: 992px) {
+	.portfolio-item {
+		width: 25%;
+	}
+}
+/* Lam component portfolio. Ket thuc. */

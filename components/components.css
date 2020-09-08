@@ -285,3 +285,86 @@ a.link:hover {
 	margin-bottom: 10px;
 }
 /* Lam components services. Ket thuc. */
+
+
+
+ /* Lam component team member. Bat dau. */
+.team-member {
+	text-align: center;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 20px 10px;
+	float: left;
+}
+
+.member-info {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.member-info::after {
+	content: "";
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.member-info img {
+	width: 100%;
+	height: auto;
+}
+
+.member-info .info {
+	position: absolute;
+	bottom: 15%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-size: 30px;
+    z-index: 2;
+    opacity: 0;
+    cursor: default;
+    transition: all 0.5s ease-in-out;
+}
+
+/*.team-member .member-info::after*/
+
+.member-info:hover::after, .member-info:hover .info {
+	opacity: 1;
+}
+
+.info .info-link {
+	padding: 0 3px;
+	box-sizing: border-box;
+}
+
+.info .info-link:hover {
+	opacity: 0.5;
+}
+
+.team-member h4 {
+	color: #1bb4b9;
+	margin-bottom: 5px;
+}
+
+.team-member p {
+	font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+	.team-member {
+		width: 50%;
+	}
+}	
+
+@media screen and (min-width: 992px) {
+	.team-member {
+		width: 25%;
+	}
+}
+/*  Lam component team member. Ket thuc. */
+

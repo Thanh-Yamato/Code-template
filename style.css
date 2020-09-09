@@ -390,12 +390,75 @@ a.link:hover {
 
 
 
+/*Lam section blog. Ket thuc.*/
+.blog {
+	background-color: #f7f7f7;
+	padding: 50px 0;
+}
+
+.blog-box {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.blog-box::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.blog-item {
+	width: 100%;
+	position: relative;
+	display: block;
+	padding: 0 20px;
+}
+
+.blog-content {
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+
+.blog-item .hover-img {
+	background-color: #333;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.blog-item .image {
+	width: 100%;
+	transition: all 0.5s ease-in-out;
+}
+
+.hover-img:hover .image {
+	transform: scale(1.1);
+	opacity: 0.6;
+}
+
+.blog-item .blog-link {
+	color: #1bb4b9;
+}
+
+.caption {
+	padding: 20px;
+}
+
+.caption > * {
+	margin-top: 5px;
+}
+/*Lam section blog. Ket thuc.*/
+
+
+
 /* Media queries. */
 @media screen and (min-width: 768px) {
 
 	.container {
 		width: 720px;
 	}
+
+
 
 	/* Topnav. Bat dau. */
 	.logo {
@@ -420,8 +483,9 @@ a.link:hover {
 	}
 	/* Topnav. Ket thuc. */
 
-	/* Lam header. Bat dau. */
 
+
+	/* Lam header. Bat dau. */
 	.content {
 		display: block;
 		font-size: 1rem;
@@ -431,6 +495,8 @@ a.link:hover {
 	}
 	/* Lam header. Ket thuc. */
 
+
+
 	/* Lam section services. Bat dau. */
 		.service-item {
 			width: 50%;
@@ -438,12 +504,16 @@ a.link:hover {
 		}
 	/* Lam section services. Ket thuc. */
 
+
+
 	/* Lam section team member. Bat dau. */
 	.member {
 		width: 50%;
 		float: left;
 	}
 	/* Lam section team member. Bat dau. */
+
+
 
 	/* Lam section portfolio. Bat dau. */
 	.portfolio-item {
@@ -460,6 +530,8 @@ a.link:hover {
 		width: 960px;
 	}
 
+
+
 	/* Lam about-us layout. Bat dau. */
 	.about-us {
 		flex-direction: row;
@@ -474,22 +546,26 @@ a.link:hover {
 	}
 	/* Lam about-us layout. Ket thuc. */
 
+
+
 	/* Lam section services. Bat dau. */
-		.service-item {
-			width: 33.33333%;
-			float: left;
-			border-right: 1px solid #ddd;
-			border-bottom: 1px solid #ddd;
-		}
+	.service-item {
+		width: 33.33333%;
+		float: left;
+		border-right: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+	}
 
-		.service-item:nth-child(3n) {
-			border-right: none;
-		}
+	.service-item:nth-child(3n) {
+		border-right: none;
+	}
 
-		.service-item:nth-last-child(-n+3) {
-			border-bottom: none;
-		}
+	.service-item:nth-last-child(-n+3) {
+		border-bottom: none;
+	}
 	/* Lam section services. Ket thuc. */
+
+
 
 	/* Lam section team member. Bat dau. */
 	.member {
@@ -498,6 +574,8 @@ a.link:hover {
 	}
 	/* Lam section team member. Bat dau. */
 
+
+
 	/* Lam section portfolio. Bat dau. */
 	.portfolio-item {
 		width: 25%;
@@ -505,9 +583,18 @@ a.link:hover {
 	}
 	/* Lam section portfolio. Ket thuc. */
 
+
+
+	/*Lam section blog. Bat dau.*/	
+	.blog-item {
+		width: 50%;
+		float: left;
+	}
+	/*Lam section blog. Ket thuc.*/	
+
 }
 
-@media and screen (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 
 	.container {
 		width: 1140px;

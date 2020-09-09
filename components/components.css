@@ -415,11 +415,17 @@ a.link:hover {
 
 
 /* Lam component blog. Bat dau. */
+.blog-box {
+	width: 90%;
+	margin: 0 auto;
+}
+
 .blog-item {
 	width: 100%;
 	position: relative;
 	text-align: center;
 	display: block;
+	border: 1px solid #ddd;
 }
 
 .blog-item .hover-img {

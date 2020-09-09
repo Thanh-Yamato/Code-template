@@ -8,6 +8,18 @@ body {
 	padding: 0;
 }
 
+ h1 {
+	font-weight: normal;
+	font-size: 30px;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+span {
+	color: #1bb4b9;
+}
+
 
 /* Topnav. Bat dau. */
 .topnav {
@@ -196,8 +208,44 @@ a.link:hover {
 
 
 
+/* Lam section services. Bat dau. */
+.services {
+	padding: 30px 0;
+	display: block;
+}
+
+.services-box::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.service-item {
+	text-align: center;
+	padding: 50px;
+}
+
+.services-icon {
+	font-size: 50px;
+	color: #1cb4b9;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.service-item h3 {
+    font-weight: bold;
+    letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+/* Lam section services. Ket thuc. */
+
+
+
 /* Media queries. */
 @media screen and (min-width: 768px) {
+
+	.container {
+		width: 720px;
+	}
 
 	/* Topnav. Bat dau. */
 	.logo {
@@ -223,9 +271,6 @@ a.link:hover {
 	/* Topnav. Ket thuc. */
 
 	/* Lam header. Bat dau. */
-	.container {
-		width: 720px;
-	}
 
 	.content {
 		display: block;
@@ -236,15 +281,20 @@ a.link:hover {
 	}
 	/* Lam header. Ket thuc. */
 
+	/* Lam section services. Bat dau. */
+		.service-item {
+			width: 50%;
+			float: left;
+		}
+	/* Lam section services. Ket thuc. */
+
 }
 
 @media screen and (min-width: 992px) {
 
-	/* Lam header. Bat dau. */
 	.container {
 		width: 960px;
 	}
-	/* Lam header. Ket thuc. */
 
 	/* Lam about-us layout. Bat dau. */
 	.about-us {
@@ -260,14 +310,32 @@ a.link:hover {
 	}
 	/* Lam about-us layout. Ket thuc. */
 
+	/* Lam section services. Bat dau. */
+		.service-item {
+			width: 33.33333%;
+			float: left;
+			border-right: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
+		}
+
+		.service-item:nth-child(3n) {
+			border-right: none;
+		}
+
+		.service-item:nth-last-child(-n+3) {
+			border-bottom: none;
+		}
+	/* Lam section services. Ket thuc. */
+
 }
 
 @media and screen (min-width: 1200px) {
 
-	/* Lam header. Bat dau. */
 	.container {
 		width: 1140px;
 	}
+
+	/* Lam header. Bat dau. */
 	/* Lam header. Ket thuc. */
 
 }

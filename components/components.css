@@ -48,7 +48,7 @@ body {
 	color: #1bb4b9;
 }
 
-.navigation .icon {
+.navigation a.icon {
 	display: none;
 }
 
@@ -70,13 +70,12 @@ body {
 		float: right;
 		display: block;
 	}
-}
-@media screen and (max-width: 768px) {
 
 	.topnav {
 		position: sticky;
 		grid-template-columns: 1fr;
 	}
+
 	.navigation a.icon {
 		position: absolute;
 		top: 3px;

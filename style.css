@@ -347,6 +347,49 @@ a.link:hover {
 
 
 
+/* Lam section portfolio. Bat dau. */
+.portfolio {
+	padding: 50px 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.portfolio-item {
+	width: 100%;
+	position: relative;
+	float: left;
+}
+
+.portfolio-item .image {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.portfolio-item .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	font-size: 30px;
+	color: #fff;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+
+.portfolio-item:hover .overlay {
+	opacity: 1;
+	cursor: pointer;
+}
+/* Lam section portfolio. Ket thuc. */
+
+
+
 /* Media queries. */
 @media screen and (min-width: 768px) {
 
@@ -402,6 +445,13 @@ a.link:hover {
 	}
 	/* Lam section team member. Bat dau. */
 
+	/* Lam section portfolio. Bat dau. */
+	.portfolio-item {
+		width: 50%;
+		float: left;
+	}
+	/* Lam section portfolio. Ket thuc. */
+
 }
 
 @media screen and (min-width: 992px) {
@@ -448,6 +498,13 @@ a.link:hover {
 	}
 	/* Lam section team member. Bat dau. */
 
+	/* Lam section portfolio. Bat dau. */
+	.portfolio-item {
+		width: 25%;
+		float: left;
+	}
+	/* Lam section portfolio. Ket thuc. */
+
 }
 
 @media and screen (min-width: 1200px) {
@@ -455,9 +512,6 @@ a.link:hover {
 	.container {
 		width: 1140px;
 	}
-
-	/* Lam header. Bat dau. */
-	/* Lam header. Ket thuc. */
 
 }
 /* Media queries. */

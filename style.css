@@ -511,6 +511,19 @@ input[type="submit"]:hover {
 
 
 
+/* Lam section footer. Bat dau. */
+footer {
+	background-color: #1cb4b9;
+	text-align: center;
+}
+
+footer p {
+	padding: 25px 0;
+}
+/* Lam section footer. Ket thuc. */
+
+
+
 /* Media queries. */
 @media screen and (min-width: 768px) {
 
